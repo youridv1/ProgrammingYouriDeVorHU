@@ -23,6 +23,29 @@ def ritprijs(leeftijd, weekendrit, afstandKM):
 
     print(res0)
 
-
+test_1 = ritprijs(11, True, 30)
+test_2 = ritprijs(12, True, 30)
+test_3 = ritprijs(64, True, 30)
+test_4 = ritprijs(65, True, 30)
+test_5 = ritprijs(11, False, 30)
+test_6 = ritprijs(12, False, 30)
+test_7 = ritprijs(64, False, 30)
+test_8 = ritprijs(65, False, 30)
+test_9 = ritprijs(11, True, 60)
+test_10 = ritprijs(12, True, 60)
+test_11 = ritprijs(64, True, 60)
+test_12 = ritprijs(65, True, 60)
+test_13 = ritprijs(11, False, 60)
+test_14 = ritprijs(12, False, 60)
+test_15 = ritprijs(64, False, 60)
+test_16 = ritprijs(65, False, 60)
+test_17 = ritprijs(11, True, -30)
+test_18 = ritprijs(12, True, -30)
+test_19 = ritprijs(64, True, -30)
+test_20 = ritprijs(65, True, -30)
+test_21 = ritprijs(11, True, -30)
+test_22 = ritprijs(12, False, -30)
+test_23 = ritprijs(64, False, -30)
+test_24 = ritprijs(65, False, -30)
 
 
