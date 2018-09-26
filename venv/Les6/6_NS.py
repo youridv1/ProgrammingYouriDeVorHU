@@ -23,7 +23,8 @@ def ritprijs(leeftijd, weekendrit, afstandKM):
 
     print(res0)
 
-#ritprijs(int(input("Geef je leeftijd: ")), bool(input("Is dit een weekendrit? (True/False) ")), int(input("Hoe lang is de reis? "))) #voor wanneer je met input wil werken
+#voor wanneer je met input wil werken
+#ritprijs(int(input("Geef je leeftijd: ")), bool(input("Is dit een weekendrit? (True/False) ")), int(input("Hoe lang is de reis? ")))
 #de 24 mogelijke randvoorwaarden
 test_1 = ritprijs(11, True, 30)
 test_2 = ritprijs(12, True, 30)
