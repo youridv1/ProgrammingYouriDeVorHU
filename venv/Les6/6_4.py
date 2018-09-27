@@ -1,7 +1,7 @@
-def check_number(b):
+def check_number(newpassword):
     numbers = 0
     number_list = "1 2 3 4 5 6 7 8 9 0"
-    for char in b:
+    for char in newpassword:
         if char in number_list:
             numbers += 1
     if numbers > 0:
