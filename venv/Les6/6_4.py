@@ -10,8 +10,8 @@ def check_number(b):
         return False
 
 
-def new_password(a, b):
-    if a != b and len(a)>5 and check_number(b):
+def new_password(oldpassword, newpassword):
+    if oldpassword != newpassword and len(oldpassword)>5 and check_number(newpassword):
         print(True)
     else:
         print(False)
