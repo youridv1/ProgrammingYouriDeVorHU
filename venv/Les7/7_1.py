@@ -3,8 +3,9 @@ def convert(tempCelcius):
     return tempFahrenheit
 
 def table():
+    print("{1:>3} {0:>5}".format("C", "F"))
     for tempCelcius in range(-30, 41, 10):
         tempFahrenheit = convert(tempCelcius)
-        print("{1:5.1f} {0:5.1f}".format(tempFahrenheit, tempCelcius))
+        print("{0:5.1f} {1:5.1f}".format(tempFahrenheit, tempCelcius))
 
 table()
