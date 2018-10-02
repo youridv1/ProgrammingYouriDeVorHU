@@ -1,4 +1,5 @@
 def gemiddelde(zin):
+    zin = zin.strip()
     zin = zin.strip('.')
     zin = zin.split(sep = ' ')
     total = 0
