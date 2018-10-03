@@ -12,8 +12,8 @@ def check_number(newpassword):
 
 def new_password(oldpassword, newpassword):
     if oldpassword != newpassword and len(oldpassword)>5 and check_number(newpassword):
-        print(True)
+        return(True)
     else:
-        print(False)
+        return(False)
 
-new_password("wachtwoord1", "wachtwoord2")
+print(new_password("wachtwoord1", "wachtwoord2"))
