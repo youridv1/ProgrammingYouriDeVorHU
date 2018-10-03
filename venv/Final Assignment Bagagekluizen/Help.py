@@ -32,17 +32,13 @@ def nieuwe_kluis():
 def kluis_openen():
     nummer = input("Geef uw kluisnummer: ")
     code = input("Geef uw code: ")
+    combinatie = nummer + ';' + code + '\n'
     kluizenlist = []
     wachtwoorden = []
     kluizen = open('kluizen.txt')
     kluizenlines = kluizen.readlines()
     kluizen.close()
-    for line in kluizenlines:
-        line = line.split(';')
-        line[1] = line[1].strip()
-        kluizenlist.append(line[0])
-        wachtwoorden.append(line[1])
-    if nummer in kluizenlist and code in wachtwoorden:
+    if combinatie in kluizenlines:
         print("Kluis nummer " + str(nummer) + " is nu open.")
     else:
         print("Kluisnummer en/of code incorrect.")
@@ -50,18 +46,13 @@ def kluis_openen():
 def kluis_teruggeven():
     nummer = input("Geef uw kluisnummer: ")
     code = input("Geef uw code: ")
+    combinatie = nummer + ';' + code + '\n'
     kluizenlist = []
     wachtwoorden = []
     kluizen = open('kluizen.txt')
     kluizenlines = kluizen.readlines()
     kluizen.close()
-    for line in kluizenlines:
-        line = line.split(';')
-        line[1] = line[1].strip()
-        kluizenlist.append(line[0])
-        wachtwoorden.append(line[1])
-    if nummer in kluizenlist and code in wachtwoorden:
-        combinatie = [nummer + ';' + code + '\n']
+    if combinatie in kluizenlines:
         kluizenlines = [x for x in kluizenlines if x not in combinatie]
         kluizen = open('kluizen.txt', 'w')
         for i in kluizenlines:
@@ -69,16 +60,6 @@ def kluis_teruggeven():
         print("De kluis is nu weer vrij.")
     else:
         print("Kluisnummer en/of code incorrect.")
-
-
-
-
-
-
-
-
-
-
 
 
 keuze = int(input("1: Ik wil weten hoeveel kluizen er nog vrij zijn\n"
