@@ -4,5 +4,5 @@ for string in lyst:
     if len(string) == 4:
         newlist.append(string)
 
-print(newlist)
+print("De nieuw-gemaakte lijst met alle vier-letter strings is:" + str(newlist))
 
