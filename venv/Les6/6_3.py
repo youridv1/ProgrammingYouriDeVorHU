@@ -1,6 +1,6 @@
 def lang_genoeg(lengte):
     if lengte >= 120:
-        print("Je bent lang genoeg voor de attractie!")
+        return("Je bent lang genoeg voor de attractie!")
     else:
-        print("Sorry, je bent te klein!")
-lang_genoeg(180)
+        return("Sorry, je bent te klein!")
+print(lang_genoeg(180))
