@@ -71,7 +71,7 @@ def bagage():
                       "2: Ik wil een nieuwe kluis\n"
                       "3: Ik wil even iets uit mijn kluis halen\n"
                       "4: Ik geef mijn kluis terug\n"
-                      "Toets de gewenste keuze in: "))
+                      "Toets de gewenste keuze in:\n"))
     if keuze > 0 and keuze < 5:
         if keuze == 1:
             print(toon_aantal_kluizen_vrij())
@@ -84,6 +84,7 @@ def bagage():
     else:
         print(
             "Fout: U kunt alleen kiezen uit de getallen 1 t/m 4.\nHet programma wordt afgelosten.\nProbeer het opnieuw.")
+    print('\n')
     bagage()
 
 bagage()
