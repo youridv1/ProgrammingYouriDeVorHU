@@ -9,17 +9,17 @@ def standaardprijs(afstandKM):
 
 
 def ritprijs(leeftijd, weekendrit, afstandKM):
-    res1 = standaardprijs(afstandKM)
+    res = standaardprijs(afstandKM)
     if weekendrit == False and leeftijd < 12 or leeftijd >= 65 and weekendrit == False:
-        res0 = res1 * 0.70
+        res = res * 0.70
     elif weekendrit == True and leeftijd < 12 or leeftijd >= 65 and weekendrit == True:
-        res0 = res1 * 0.65
+        res = res * 0.65
     elif weekendrit == True and leeftijd >= 12 and leeftijd < 65:
-        res0 = res1 * 0.60
+        res = res * 0.60
     else:
-        res0 = res1
+        res = res
 
-    print(res0)
+    print(res)
 
 #voor wanneer je met input wil werken
 ritprijs(int(input("Geef je leeftijd: ")), bool(input("Is dit een weekendrit? (True/False) ")), int(input("Hoeveel KM is de reis? ")))
