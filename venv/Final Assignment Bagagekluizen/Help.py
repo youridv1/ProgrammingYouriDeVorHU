@@ -35,8 +35,6 @@ def kluis_openen():
     nummer = input("Geef uw kluisnummer: ")
     code = input("Geef uw code: ")
     combinatie = nummer + ';' + code + '\n'
-    kluizenlist = []
-    wachtwoorden = []
     kluizen = open('kluizen.txt')
     kluizenlines = kluizen.readlines()
     kluizen.close()
@@ -50,8 +48,6 @@ def kluis_teruggeven():
     nummer = input("Geef uw kluisnummer: ")
     code = input("Geef uw code: ")
     combinatie = nummer + ';' + code + '\n'
-    kluizenlist = []
-    wachtwoorden = []
     kluizen = open('kluizen.txt')
     kluizenlines = kluizen.readlines()
     kluizen.close()
@@ -71,8 +67,9 @@ def bagage():
                       "2: Ik wil een nieuwe kluis\n"
                       "3: Ik wil even iets uit mijn kluis halen\n"
                       "4: Ik geef mijn kluis terug\n"
+                      "5: Ik wil het systeem afsluiten\n"
                       "Toets de gewenste keuze in:\n"))
-    if keuze > 0 and keuze < 5:
+    if keuze > 0 and keuze <= 5:
         if keuze == 1:
             print(toon_aantal_kluizen_vrij())
         elif keuze == 2:
@@ -81,9 +78,12 @@ def bagage():
             kluis_openen()
         elif keuze == 4:
             kluis_teruggeven()
+        elif keuze == 5:
+            wachtwoord = input("Geef het systeemwachtwoord: ")
+            if wachtwoord == 'ketznv':
+                print("Systeem sluit af. Fijne dag verder!")
     else:
-        print(
-            "Fout: U kunt alleen kiezen uit de getallen 1 t/m 4.\nHet programma wordt afgelosten.\nProbeer het opnieuw.")
+        print("Fout: U kunt alleen kiezen uit de getallen 1 t/m 4.\nHet programma wordt afgelosten.\nProbeer het opnieuw.")
     print('\n')
     bagage()
 
