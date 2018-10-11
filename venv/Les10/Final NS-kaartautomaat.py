@@ -12,7 +12,7 @@ def inlezen_eindstation(stations, beginstation):
       return station
     else:
         print('Deze trein komt vanaf ' + str(beginstation + ' niet langs ' + str(station)))
-        inlezen_eindstation()
+        inlezen_eindstation(stations, beginstation)
 
 def omroepen_reis(stations, beginstation, eindstation):
     afstand = str(stations.index(eindstation) - stations.index(beginstation))
