@@ -6,6 +6,7 @@ def monopolyworp(throws):
     throws += 1
     t1 = random.randrange(1, 7)
     t2 = random.randrange(1, 7)
+    print(str(t1) + ' + ' + str(t2) + ' = ' + str(t1+t2))
     if t1 == t2:
         if throws >= 3:
             print('Naar de gevangenis')
