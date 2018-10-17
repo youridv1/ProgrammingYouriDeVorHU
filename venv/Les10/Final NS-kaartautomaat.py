@@ -19,8 +19,8 @@ def omroepen_reis(stations, beginstation, eindstation):
     prijs = int(afstand) * 5
     prijs = str(prijs)
     slice = stations[1 + stations.index(beginstation):stations.index(eindstation)]
-    print('Het beginstation ' + str(beginstation + 'is het ' + str(1 + stations.index(beginstation))) + 'e station in het traject.\n'
-        'Het eindstation ' + str(eindstation + 'is het ' + str(1 + stations.index(eindstation))) + 'e station in het traject.\n'
+    print('Het beginstation ' + str(beginstation) + 'is het ' + str(1 + stations.index(beginstation)) + 'e station in het traject.\n'
+        'Het eindstation ' + str(eindstation) + 'is het ' + str(1 + stations.index(eindstation)) + 'e station in het traject.\n'
         'De afstand bedraagt ' + afstand + ' station(s)\n'
         'De prijs van het kaartje is ' + str(prijs) + ' euro.\n'
         'U komt onderweg langs de station(s) ' + str(slice).strip('[]'))
