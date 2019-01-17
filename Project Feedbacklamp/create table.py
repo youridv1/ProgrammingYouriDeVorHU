@@ -7,7 +7,7 @@ def create_tables():
     commands = (
         """
         CREATE TABLE deelnemers (
-            studentnr int PRIMARY KEY,
+            studentnr VARCHAR(255) PRIMARY KEY,
             voornaam VARCHAR(255) NOT NULL,
             achternaam VARCHAR(255) NOT NULL)
         """,)
